@@ -108,7 +108,7 @@ export default function Basic() {
                 }}
               >
                 <img
-                  src={meal.strMealThumb}
+                  src={meal.strMealThumb || "https://tse1.mm.bing.net/th/id/OIP.gmNMTyBJy4LAshKKBsukZAHaFj?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"}
                   className="card-img-top"
                   alt={meal.strMeal}
                   style={{ height: "150px", objectFit: "cover" }}
