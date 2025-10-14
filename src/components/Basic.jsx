@@ -13,7 +13,7 @@ export default function Basic() {
   const [comment, setComment] = useState("");
   const [cart, setCart] = useState([]); // ✅ قائمة الطلبات
   const [orderType, setOrderType] = useState("Dine In");
-
+  
   createIcons({ icons });
 
   const categoryInfo = {
@@ -35,6 +35,8 @@ export default function Basic() {
     sandwich: { icon: <i data-lucide="sandwich"></i>, price: 45 },
     Coffee: { icon: <i data-lucide="coffee"></i>, price: 30 },
   };
+
+  let srcImg="https://tse1.mm.bing.net/th/id/OIP.gmNMTyBJy4LAshKKBsukZAHaFj?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
 
   useEffect(() => {
     axios
@@ -108,7 +110,7 @@ export default function Basic() {
                 }}
               >
                 <img
-                  src={meal.strMealThumb || "https://tse1.mm.bing.net/th/id/OIP.gmNMTyBJy4LAshKKBsukZAHaFj?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"}
+                  src={meal.strMealThumb || srcImg}
                   className="card-img-top"
                   alt={meal.strMeal}
                   style={{ height: "150px", objectFit: "cover" }}
@@ -145,7 +147,7 @@ export default function Basic() {
                     className="d-flex align-items-center border-bottom py-2"
                   >
                     <img
-                      src={item.image}
+                      src={item.image || srcImg}
                       alt={item.name}
                       className="rounded me-2"
                       style={{
@@ -277,7 +279,10 @@ export default function Basic() {
 
             <div className="d-flex align-items-center mb-3">
               <img
-                src={selectedMeal.strMealThumb}
+                src={selectedMeal.strMealThumb || srcImg
+
+
+                }
                 alt={selectedMeal.strMeal}
                 className="rounded-3 shadow-sm me-3"
                 style={{ width: "120px", height: "120px", objectFit: "cover" }}
