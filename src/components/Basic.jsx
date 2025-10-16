@@ -119,7 +119,7 @@ export default function Basic() {
                   <h5 className="card-title">{meal.strMeal}</h5>
                   <p>
                     <strong>Price:</strong>{" "}
-                    {categoryInfo[selectedCategory]?.price || 70} EGP
+                    {categoryInfo[selectedCategory]?.price || 70} SAR
                   </p>
                 </div>
               </div>
@@ -159,10 +159,10 @@ export default function Basic() {
                     <div className="flex-grow-1 text-start ms-3">
                       <strong>{item.name}</strong>
                       <p className="mb-0 text-muted small">
-                        Qty: {item.quantity} × {item.unitPrice} EGP
+                        Qty: {item.quantity} × {item.unitPrice} SAR
                       </p>
                       <p className="mb-0">
-                        <strong>{item.total} EGP</strong>
+                        <strong>{item.total} SAR</strong>
                       </p>
                       {item.comment && (
                         <small className="text-secondary">
@@ -177,7 +177,7 @@ export default function Basic() {
               {/* ✅ Total Price */}
               <div className="border-top pt-3 my-2 text-start">
                 <h6 className="fw-bold text-success fs-5 text-center mb-5">
-                  Total: {totalPrice} EGP
+                  Total: {totalPrice} SAR
                 </h6>
               </div>
 
@@ -291,14 +291,14 @@ export default function Basic() {
                 <h5 className="mb-2">{selectedMeal.strMeal}</h5>
                 <p className="fs-6 mb-0 text-muted">
                   <strong>Unit Price:</strong>{" "}
-                  {categoryInfo[selectedCategory]?.price || 70} EGP
+                  {categoryInfo[selectedCategory]?.price || 70} SAR
                 </p>
               </div>
             </div>
 
             <p className="fs-5 text-success text-center mb-3">
               <strong>Total:</strong>{" "}
-              {(categoryInfo[selectedCategory]?.price || 70) * quantity} EGP
+              {(categoryInfo[selectedCategory]?.price || 70) * quantity} SAR
             </p>
 
             <div className="d-flex justify-content-center align-items-center mb-3">
