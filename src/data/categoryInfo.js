@@ -1,0 +1,16 @@
+export const categoryInfo = {
+  Breakfast: { icon: <i data-lucide="egg-fried"></i>, price: 85 },
+  Miscellaneous: { icon: <i data-lucide="chef-hat"></i>, price: 50 },
+  Starter: { icon: <i data-lucide="nut"></i>, price: 60 },
+  Soup: { icon: <i data-lucide="cup-soda"></i>, price: 65 },
+  Side: { icon: <i data-lucide="torus"></i>, price: 58 },
+  Beef: { icon: <i data-lucide="beef"></i>, price: 120 },
+  Lamb: { icon: <i data-lucide="ham"></i>, price: 110 },
+  Chicken: { icon: <i data-lucide="drumstick"></i>, price: 90 },
+  Seafood: { icon: <i data-lucide="shrimp"></i>, price: 100 },
+  Pasta: { icon: <i data-lucide="line-squiggle"></i>, price: 80 },
+  Vegan: { icon: <i data-lucide="salad"></i>, price: 70 },
+  Dessert: { icon: <i data-lucide="cake-slice"></i>, price: 70 },
+  Drink: { icon: <i data-lucide="beer"></i>, price: 55 },
+  Coffee: { icon: <i data-lucide="coffee"></i>, price: 30 },
+};

@@ -4,3 +4,12 @@
   text-align: center;
 }
 
+.meal-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.meal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(1, 10, 26, 0.3);
+}

@@ -3,7 +3,7 @@ import axios from "axios";
 import { createIcons, icons } from "lucide";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+ 
 export default function Basic() {
   const [meals, setMeals] = useState([]);
   const [categories, setCategories] = useState([]);
@@ -61,18 +61,18 @@ export default function Basic() {
       <div className="row flex-nowrap ">
         {/* ✅ Sidebar */}
         <div
-          className="bg-light my-2 shadow rounded-4"
+          className="bg-light my-2 shadow rounded-4  "
           style={{ width: "fit-content", backgroundColor: "#cfe2ff" }}
         >
           <h4 className="text-center my-3">
             Menu <i data-lucide="utensils"></i>
           </h4>
 
-          <ul className="list-group mx-auto">
+          <ul className="list-group mx-auto ">
             {categories.map((cat) => (
               <li
                 key={cat.strCategory}
-                className={`list-group-item d-flex flex-column justify-content-center align-items-center my-1 rounded-3 py-2 ${
+                className={`list-group-item d-flex flex-column justify-content-center align-items-center my-1 rounded-3 py-2 meal-card ${
                   selectedCategory === cat.strCategory ? "active" : ""
                 }`}
                 style={{
@@ -100,7 +100,7 @@ export default function Basic() {
           <div className="d-flex flex-wrap gap-2 my-2">
             {meals.map((meal) => (
               <div
-                className="card border-0 shadow"
+                className="card border-0 shadow  meal-card"
                 key={meal.idMeal}
                 style={{ width: "12rem", cursor: "pointer" }}
                 onClick={() => {
